@@ -1,0 +1,13 @@
+# Ignore build outputs
+*.exe
+*.obj
+*.manifest
+
+# VSCode configs that shouldn’t be committed (optional)
+.vscode/settings.json
+.vscode/launch.json
+
+# OS + editor trash
+*.log
+.DS_Store
+Thumbs.db
