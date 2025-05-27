@@ -1,0 +1,10 @@
+{
+  "name": "project-igloo",
+  "version": "0.1.0",
+  "dependencies": [
+    "libpqxx",
+    "wxwidgets"
+  ],
+  "default-features": [],
+  "overrides": []
+}
