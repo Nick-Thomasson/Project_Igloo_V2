@@ -19,7 +19,7 @@ Before doing anything, make sure the following are installed on your machine:
 ## 📦 Setup (First Time on a New Machine)
 
 ```bash
-git clone https://github.com/yourusername/Project_Igloo_V2.git
+git clone https://github.com/yourusername/Project_Igloo_V2.git](https://github.com/Nick-Thomasson/Project_Igloo_V2.git
 cd Project_Igloo_V2
 vcpkg install
 code .
