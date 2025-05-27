@@ -8,10 +8,10 @@
       "args": [
         "/std:c++17",
         "/EHsc",
-        "/I", "C:\\vcpkg\\installed\\x64-windows\\include",
+        "/I", "C:/vcpkg/installed/x64-windows/include",
         "*.cpp",
         "/link",
-        "/LIBPATH:C:\\vcpkg\\installed\\x64-windows\\lib",
+        "/LIBPATH:C:/vcpkg/installed/x64-windows/lib",
         "pqxx.lib",
         "libpq.lib",
         "wxmsw32u_core.lib",
