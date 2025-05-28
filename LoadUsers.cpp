@@ -8,21 +8,24 @@
 using namespace pqxx;
 using namespace std;
 
-
 extern string DataBaseAddress;
 extern vector<UserInfo> users; // Declare the external vector if needed
 
-void LoadUsers() {
-	try {
+void LoadUsers()
+{
+	try
+	{
 		connection C(DataBaseAddress);
 
-		if (C.is_open()) {
+		if (C.is_open())
+		{
 			cout << "Connected to the database successfully." << endl;
 
 			work W(C);
 			result R = W.exec("SELECT username, password, security_question, security_answer, last_sign_in, entry_count FROM users;");
 
-			for (auto row : R) {
+			for (auto row : R)
+			{
 				UserInfo user;
 				user.SetUsername(row["username"].c_str());
 				user.SetPassword(row["password"].c_str());
@@ -34,11 +37,13 @@ void LoadUsers() {
 				users.push_back(user);
 			}
 		}
-		else {
+		else
+		{
 			cout << "Can't open the database." << endl;
 		}
 	}
-	catch (const exception& e) {
+	catch (const exception &e)
+	{
 		cerr << e.what() << endl;
 	}
 }

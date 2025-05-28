@@ -6,7 +6,8 @@
 
 using namespace std;
 
-class UserInfo {
+class UserInfo
+{
 private:
     string username;
     string password;
@@ -25,16 +26,16 @@ public:
     int GetEntryCount() const;
 
     // Setters
-    void SetUsername(const string& newUsername);
-    void SetPassword(const string& newPassword);
-    void SetSecurityQuestion(const string& newSecurityQuestion);
-    void SetSecurityAnswer(const string& newSecurityAnswer);
-    void SetLastSignIn(const string& newLastSignIn);
+    void SetUsername(const string &newUsername);
+    void SetPassword(const string &newPassword);
+    void SetSecurityQuestion(const string &newSecurityQuestion);
+    void SetSecurityAnswer(const string &newSecurityAnswer);
+    void SetLastSignIn(const string &newLastSignIn);
     void SetEntryCount(int newEntryCount);
 
     // Serialization
     string Serialize() const;
-    void Deserialize(const string& data);
+    void Deserialize(const string &data);
 };
 
 #endif
