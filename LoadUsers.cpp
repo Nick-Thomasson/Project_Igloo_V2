@@ -15,14 +15,14 @@ void LoadUsers()
 {
 	try
 	{
-		connection C(DataBaseAddress);
+		connection Connection(DataBaseAddress);
 
-		if (C.is_open())
+		if (Connection.is_open())
 		{
 			cout << "Connected to the database successfully." << endl;
 
-			work W(C);
-			result R = W.exec("SELECT username, password, security_question, security_answer, last_sign_in, entry_count FROM users;");
+			work Work(Connection);
+			result R = Work.exec("SELECT username, password, security_question, security_answer, last_sign_in, entry_count FROM users;");
 
 			for (auto row : R)
 			{
