@@ -1,13 +1,54 @@
-# Ignore build outputs
+# === BUILD OUTPUTS ===
 *.exe
 *.obj
-*.manifest
-
-# VSCode configs that shouldn’t be committed (optional)
-.vscode/settings.json
-.vscode/launch.json
-
-# OS + editor trash
+*.o
+*.dll
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.app
+*.out
 *.log
+
+# === VISUAL STUDIO ===
+.vs/
+*.VC.db
+*.VC.opendb
+
+# === VCPKG ===
+vcpkg_installed/
+packages/
+
+# === CMAKE / NMAKE ===
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+build/
+Debug/
+Release/
+x64/
+*.user
+*.suo
+
+# === WXWIDGETS TEMP FILES (sometimes show up) ===
+*.ncb
+*.sbr
+*.sdf
+*.opensdf
+
+# === OS/EDITOR JUNK ===
 .DS_Store
 Thumbs.db
+*.swp
+
+# === VSCODE CONFIG (optional) ===
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# === PERSONAL SECRETS ===
+*.env
+config.json
+secrets.json
